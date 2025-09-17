@@ -1,5 +1,5 @@
 {
-  "stack": "heroku-22",
+  "stack": "heroku-24",
   "addons": [
     "heroku-postgresql:in-dyno"
   ],
@@ -10,10 +10,6 @@
     ],
     "scripts": {
     "postdeploy": "bundle exec rails db:schema:load"
-    },
-    "env": {
-    "RAILS_ENV": "review",
-    "DISABLE_DATABASE_ENVIRONMENT_CHECK": "1"
     }
     }
 },
